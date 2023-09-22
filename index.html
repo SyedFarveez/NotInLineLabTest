@@ -1,0 +1,172 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/rxyFndL/Whats-App-Image-2023-09-22-at-11-32-29-AM.jpg" alt="" class="ntllogo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">Home</a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Health Condition</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3"><span>Lab Tests</span></a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Medicine</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="bannersection">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 mt-5">
+                    <h1 class="headone mt-3">Fill in the Details to get the Call!</h1>
+                    <div class="form-container">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" id="location" name="location" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="checkbox">By continuing agree to out Terms & Policy</label>
+                                <input type="checkbox" id="checkbox" name="checkbox" required>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Proceed</button>
+                            </div>
+                        </form>
+                    </div>
+                    <img src="https://i.ibb.co/597v9dP/Offer-line.png" />
+                </div>
+                <div class="col-12 col-md-6 mt-5">
+                    <img src="https://i.ibb.co/yn6TvSN/Hero-text-image.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accredition">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-12 text-center mt-5">
+                    <img src="https://i.ibb.co/q9XBmXy/Accreditation.png" />
+                </div>
+                <div class="col-6 col-md-12 text-center">
+                    <img src="https://i.ibb.co/V3CmH9W/We-keep-expanding.png" />
+                </div>
+                <div class="col-6 col-md-12 text-center mt-5">
+                    <div class="doctor-listings py-5">
+                        <div class="container">
+                            <h2 class="text-center mb-4">Top Doctors</h2>
+                            <div class="row doctor-cards">
+                                <!-- Doctor Cards will be dynamically generated here using JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Appointment Form -->
+                    <form id="appointment-form" style="display: none;">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="message">Message (optional):</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+
+                        <button type="submit">Submit</button>
+                        <button id="back-button" type="button" class="btn btn-primary" style="display: none;">Back</button>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="WhyChooseUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-6 text-center mt-5">
+                    <img src="https://i.ibb.co/4mGqLy6/Why-choose-us.png" />
+                </div>
+                <div class="col-6 col-md-6 text-center mt-5">
+                    <img src="https://i.ibb.co/4gSdh47/medium-shot-woman-looking-through-microscope-removebg-preview-1.png" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="https://i.ibb.co/qMXk4ZW/NIL-logo-Transparent-1-1.png" />
+                    <p>Book doctor appointments online and get your ailments treated in no time with our expert medical support systems. Get rid of all your medical problems with our expert panel of doctors who guide you towards a healthier life.</p>
+                    <p>Contact us at: <a href="tel:+919600211007"><span>&#9742;</span> <br />+91 96002 11007</a></p>
+                </div>
+                <div class="col-md-3 concen">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Appointment</a></li>
+                        <li><a href="#">Lab Test</a></li>
+                        <li><a href="#">A - Z Medicine</a></li>
+                        <li><a href="#">Doctor Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 concen">
+                    <h4>Legal</h4>
+                    <p>General Info</p>
+                    <p>Privacy Policy</p>
+                    <p>Terns of Services</p>
+                    <p>Consultaion</p>
+                </div>
+                <div class="col-md-3 concen">
+                    <h4>Talk to Us</h4>
+                    <p>appointment@notinline.com</p>
+                    <p>support@notinline.com</p>
+                    <p>+91 12345 67899</p>
+                    <p>+91 97642 09752</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright">2021-2023 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
